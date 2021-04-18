@@ -22,18 +22,18 @@ module.exports = class ShwarmaOrder extends Order{
         switch(this.stateCur){
             case OrderState.WELCOMING:
                 this.stateCur = OrderState.SIZE;
-                aReturn.push("Welcome to Richard's Shawarma.");
-                aReturn.push("What size would you like?");
+                aReturn.push("Welcome to Hayashi's Pop Up Sushi.");
+                aReturn.push("We serve Handrools; Sashimis; Sushis; Tempuras; Udons. What would you like to have?");
                 break;
             case OrderState.SIZE:
                 this.stateCur = OrderState.TOPPINGS
                 this.sSize = sInput;
-                aReturn.push("What toppings would you like?");
+                aReturn.push("What dipping sauce would you like? Wasabi? Soy sauce?");
                 break;
             case OrderState.TOPPINGS:
                 this.stateCur = OrderState.DRINKS
                 this.sToppings = sInput;
-                aReturn.push("Would you like drinks with that?");
+                aReturn.push("Would you like drinks with that? Pops: Coke, Sprite, Fenta; Tea: Oolong, Black, Green");
                 break;
             case OrderState.DRINKS:
                 this.stateCur = OrderState.PAYMENT;
