@@ -15,7 +15,7 @@ module.exports = class ShwarmaOrder extends Order{
         this.sSize = "";
         this.sToppings = "";
         this.sDrinks = "";
-        this.sItem = "shawarama";
+        this.sItem = "dish";
     }
     handleInput(sInput){
         let aReturn = [];
