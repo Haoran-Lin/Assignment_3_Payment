@@ -67,7 +67,7 @@ module.exports = class ShwarmaOrder extends Order{
       if(sAmount != "-1"){
         this.nOrder = sAmount;
       }
-      const sClientID = AbUDOdmeE2eoiSGLZPQ8OoAwj93NXw5kCJTXMlcal-rI6KEOJEYIuHHiMo_CcljKDfCQ91oAULH3pdEc || 'put your client id here for testing ... Make sure that you delete it before committing'
+      const sClientID = process.env.SB_CLIENT_ID || 'put your client id here for testing ... Make sure that you delete it before committing'
       return(`
       <!DOCTYPE html>
   
